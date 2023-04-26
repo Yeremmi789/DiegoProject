@@ -1,0 +1,101 @@
+.caja-maestra {
+    display: flex;
+    background-color: red;
+}
+
+.cuerpo {
+    padding-top: 65px;
+    line-height: 1.5;
+    font-size: 15px;
+    color: #666666;
+    margin: 0 65px 65px 65px;
+    font-family: 'Poppins';
+    font-style: normal;
+    padding-bottom: 100px;
+}
+
+table {
+    /* width: 100%; */
+    width: 300px;
+}
+
+.centrar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#ancho {
+    /* min-width: 700px; */
+    width: 80%;
+}
+
+
+
+.example-container {
+    width: 500px;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.example-sidenav-content {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.example-sidenav {
+    padding: 20px;
+}
+
+/* button{
+    border-radius: 50%;
+    color: blueviolet;
+} */
+
+.example-button-row button,
+.example-button-row a {
+    margin-right: 8px;
+}
+
+.example-disabled {
+    display: inline-block;
+}
+
+#botonxd{
+    border-radius: 50%;
+    color: blueviolet;
+}
+
+section {
+    display: table;
+}
+
+.example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+}
+
+.example-button-row {
+    display: table-cell;
+    max-width: 600px;
+}
+
+.example-button-row .mat-mdc-button-base {
+    margin: 8px 8px 8px 0;
+}
+
+.example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+}

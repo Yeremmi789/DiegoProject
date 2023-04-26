@@ -1,0 +1,98 @@
+<!-- <app-nav></app-nav>
+<div class="espacio_nav">
+</div> -->
+
+
+<!-- <div class="caja-maestra">
+<div id="titulo">
+    <h1>Registro de pacientes</h1>
+</div>
+
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td colspan="2">Larry the Bird</td>
+                <td>@twitter</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div> -->
+
+<!-- <div class="cuerpo">
+    <div style="text-align: left;font-size: 19px; font-weight: bold;">
+        Registro de pacientes
+    </div>
+    <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+
+</div> -->
+
+<!-- <app-barra-lateral></app-barra-lateral> -->
+<div class="centrar">
+    <h1>hola mundo</h1>
+    <button (click)="logout()">Cerrar Sesión</button>
+</div>
+
+<div class="centrar">
+    <div id="ancho">
+
+        <table class="table w-100">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido_paterno</th>
+                    <th scope="col">Apellido_materno</th>
+                    <th scope="col">Edad</th>
+                    <th scope="col">Telefono</th>
+                    <th scope="col">Direccion</th>
+                    <th scope="col">Opciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of Paciente">
+                    <th scope="row">{{item.id}}</th>
+                    <td>{{item.nombre}}</td>
+                    <td>{{item.apellido_paterno}}</td>
+                    <td>{{item.apellido_materno}}</td>
+                    <td>{{item.edad}}</td>
+                    <td>{{item.telefono}}</td>
+                    <td>{{item.direccion}}</td>
+                    <a mat-mini-fab matTooltip="Primary" color="primary" id="botonxd"
+                        aria-label="Example mini fab with a heart icon" 
+                        routerLink="/vista-paciente"
+                        >
+                        <mat-icon>favorite</mat-icon>
+                    </a>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+<app-footer></app-footer>

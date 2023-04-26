@@ -1,0 +1,81 @@
+<app-nav></app-nav>
+<div class="espacio_nav">
+</div>
+
+<div class="animated fadenIn">
+
+    <div style="width: 100%; display: flex; justify-content: center;">
+        <mdb-carousel #carousel [controls]="true" [indicators]="true" [animation]="'slide'" [interval]="transicion_ims"
+            [keyboard]="true" slidefade *ngIf="media.length" class="tamano-Carrusel">
+            <mdb-carousel-item *ngFor="let slide of media">
+                <img src="{{slide.imagen}}" id="imagenes-carrusel" />
+                <div class="carousel-caption d-none d-md-block">
+                    <!-- <h5>{{slide.titulo}}</h5>
+                    <p>{{slide.desc}}</p> -->
+                </div>
+            </mdb-carousel-item>
+        </mdb-carousel>
+    </div>
+
+
+</div>
+<!--  -->
+
+<!-- <app-breadcrumbs></app-breadcrumbs> -->
+
+
+<nav aria-label="breadcrumb" style="padding: 30px 0 0 30px;">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <!-- <li class="breadcrumb-item active" aria-current="page">{{titulo}}</li> -->
+    </ol>
+</nav>
+
+
+
+<!--  -->
+
+<div id="glit" class="container">
+
+    <h3 class="h1"> Zapatos</h3>
+
+    <div id="line"></div>
+
+</div>
+
+<!-- 
+<div id="glit" class="container">
+
+    <h3 class="h1">Ubicación</h3>
+
+    <div id="line"></div>
+
+</div>
+
+
+<div class="gps">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14882.34010384542!2d-98.6143007872797!3d21.16890658347364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d6dc2d01991729%3A0xd1d8ef101d1c4e0c!2sOrizatl%C3%A1n%2C%20Hgo.!5e0!3m2!1ses!2smx!4v1660862965353!5m2!1ses!2smx"
+        width="1100" height="550" style="border: 0;" class="ajustar-100"></iframe>
+</div> -->
+
+
+<!-- <div class="container">
+    <div class="heart-container">
+        <div class="heart"></div>
+    </div>
+    <p class="thank-you">Gracias por visitar el hospital</p>
+    <div class="container">
+        <p class="thank-you">No estás solo en esto :') </p>
+    </div>
+</div> -->
+
+<div class="doctor-container">
+    <img src="assets/img/zapatito.jpg" alt="Doctor" class="doctor-img">
+</div>
+
+<p class="thank-you">Gracias por visitarnos</p>
+<div class="" style="padding: 20px;"></div>
+
+
+<app-footer></app-footer>
